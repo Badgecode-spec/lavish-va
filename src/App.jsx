@@ -201,16 +201,16 @@ const css = `
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Figtree:wght@300;400;500;600&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#09051a}
-.app{font-family:'Figtree',sans-serif;background:#09051a;color:#e4d4f7;min-height:100vh;max-width:860px;margin:0 auto;font-size:14px}
-.hdr{background:linear-gradient(160deg,#12072b 0%,#1f0e45 60%,#160a32 100%);padding:18px 20px 0;border-bottom:1px solid rgba(201,168,76,.25);position:sticky;top:0;z-index:99}
-.brand{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:#c9a84c;letter-spacing:3px;text-transform:uppercase}
-.sub{font-size:10px;color:#8a6caa;letter-spacing:2px;text-transform:uppercase;margin-top:1px}
-.tabs{display:flex;overflow-x:auto;gap:0;margin-top:14px;scrollbar-width:none}
+.app{font-family:'Figtree',sans-serif;background:#09051a;color:#e4d4f7;min-height:100vh;font-size:14px;overflow-x:hidden}
+.hdr{background:linear-gradient(160deg,#12072b 0%,#1f0e45 80%,#160a32 100%);padding:24px max(24px, calc(50vw - 450px)) 0;border-bottom:1px solid rgba(201,168,76,.25);position:sticky;top:0;z-index:99;box-shadow:0 15px 40px -10px rgba(0,0,0,0.7);backdrop-filter:blur(10px)}
+.brand{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#c9a84c;letter-spacing:3.5px;text-transform:uppercase}
+.sub{font-size:10px;color:#8a6caa;letter-spacing:2px;text-transform:uppercase;margin-top:2px}
+.tabs{display:flex;overflow-x:auto;gap:4px;margin-top:16px;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.t{padding:10px 14px;font-size:11.5px;color:#7a5c9a;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;background:none;border-top:none;border-left:none;border-right:none;font-family:'Figtree',sans-serif;letter-spacing:.3px}
-.t.on{color:#c9a84c;border-bottom-color:#c9a84c}
-.t:hover{color:#d4c4e8}
-.body{padding:18px 20px 40px}
+.t{padding:10px 14px;font-size:11.5px;color:#7a5c9a;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .3s ease;background:none;border-top:none;border-left:none;border-right:none;font-family:'Figtree',sans-serif;letter-spacing:.5px;border-radius:6px 6px 0 0}
+.t.on{color:#c9a84c;border-bottom-color:#c9a84c;background:rgba(201,168,76,.05)}
+.t:hover:not(.on){color:#d4c4e8;background:rgba(255,255,255,.03)}
+.body{max-width:900px;margin:0 auto;padding:28px 24px 60px}
 .stitle{font-family:'Cormorant Garamond',serif;font-size:19px;color:#c9a84c;margin-bottom:14px;font-weight:500;letter-spacing:.5px}
 .card{background:rgba(31,14,69,.45);border:1px solid rgba(201,168,76,.18);border-radius:8px;padding:14px;margin-bottom:10px}
 .ctitle{font-family:'Cormorant Garamond',serif;font-size:15px;color:#e4d4f7;font-weight:600;margin-bottom:6px}
